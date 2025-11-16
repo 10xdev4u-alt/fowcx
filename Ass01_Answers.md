@@ -190,5 +190,3 @@ Interference is the primary factor limiting the performance and capacity of cell
     *   **Careful Frequency Planning:** Assigning adjacent frequency channels to cells that are geographically distant from one another.
     *   **High-Quality Filters:** Using sharp filters in receivers that can better reject adjacent channel energy.
     *   **Power Control:** Ensuring transmitters do not use excessive power that could "bleed" into adjacent channels.
-
-```
