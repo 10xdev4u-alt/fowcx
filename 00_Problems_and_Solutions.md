@@ -53,3 +53,40 @@ This file will contain all the practice problems and their solutions we cover th
 >
 > **Solution:**
 > The Signal-to-Interference Ratio (SIR) for this cellular system is approximately **18.66 dB**.
+
+---
+
+## UNIT III: Multiple Access Techniques
+
+### FDMA
+
+**Problem 1:** The AMPS cellular system allocates a total of 12.5 MHz of bandwidth for its forward channels. Each channel consists of a 30 kHz voice channel and a 10 kHz guard band. How many channels can be supported?
+
+> **Approach:**
+> 1.  **Identify Total Bandwidth:** B_total = 12.5 MHz = 12,500,000 Hz.
+> 2.  **Identify Full Channel Bandwidth:** The total width for one channel includes the voice channel plus its associated guard band. B_channel = 30 kHz + 10 kHz = 40 kHz = 40,000 Hz.
+> 3.  **Calculate Number of Channels (N):** Use the formula N = B_total / B_channel.
+>
+> **Calculation:**
+> -   N = 12,500,000 / 40,000
+> -   N = 312.5
+>
+> **Solution:**
+> Since we cannot have a fraction of a channel, the system can support a maximum of **312 channels**.
+
+### TDMA
+
+**Problem 1:** A GSM system uses a frame structure where each time slot carries a total of 156.25 bits, but only 114 of these are actual data bits. The rest are overhead. Calculate the frame efficiency.
+
+> **Approach:**
+> 1.  **Identify Total Bits:** The total number of bits in a time slot is N_total = 156.25.
+> 2.  **Identify Data Bits:** The number of useful data bits is N_data = 114.
+> 3.  **Calculate Efficiency:** The efficiency is the ratio of data bits to total bits. The efficiency of a single slot is representative of the entire frame.
+>     $$ \eta = \frac{N_{data}}{N_{total}} \times 100\% $$
+>
+> **Calculation:**
+> -   η = (114 / 156.25) * 100%
+> -   η = 0.7296 * 100%
+>
+> **Solution:**
+> The frame efficiency is **72.96%**. This means that approximately 27% of the transmitted information is overhead.

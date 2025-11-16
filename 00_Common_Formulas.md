@@ -40,3 +40,27 @@ This file will contain all the important formulas we cover throughout the course
     -   *n* is the path loss exponent (typically 2 to 4).
     -   *i_0* is the number of first-tier interfering cells (usually 6).
 
+---
+
+## UNIT III: Multiple Access Techniques
+
+### FDMA
+
+1.  **Number of Channels (N):**
+    -   Calculates the number of channels in an FDMA system.
+    -   Formula: $$ N = \frac{B_{total} - 2B_{guard}}{B_{channel}} $$
+    -   *B_total* is total bandwidth, *B_guard* is the guard band at the edges of the spectrum, *B_channel* is the bandwidth of one channel.
+
+### TDMA
+
+1.  **Frame Efficiency (η_frame):**
+    -   Measures the percentage of data that is useful payload versus overhead.
+    -   Formula: $$ \eta_{frame} = \frac{\text{Total Data Bits}}{\text{Total Frame Bits}} \times 100\% = \left(1 - \frac{\text{Total Overhead Bits}}{\text{Total Frame Bits}}\right) \times 100\% $$
+
+### CDMA
+
+1.  **Processing Gain (PG):**
+    -   Measures the degree to which the signal is spread.
+    -   Formula: $$ PG = \frac{W}{R} = \frac{\text{Chip Rate}}{\text{Data Rate}} $$
+    -   *W* is the bandwidth of the spread signal, *R* is the data rate of the original signal.
+
