@@ -30,7 +30,7 @@ This document provides detailed answers for the FAT03 Question Paper, covering t
         / \
       |  /   \      /   V   \
       | /     \    /         \   /
-      |/_______"__/___________"______> Distance
+      |/_______"__\___________"______> Distance
       |         \
       +----------\---------------------
                  Small-Scale Fading (Rapid Fluctuations)
@@ -328,15 +328,32 @@ Each diversity technique offers a way to create independent signal branches to f
 **Inspection of Diversity Combining Techniques**
 
 **Introduction:**
-Once a receiver obtains multiple, independently faded signal branches through a diversity scheme (like space diversity), it must process them to create a single, more reliable output. This processing is done by combining or selection<table><tr><td>`corrected_new_string_escaping`</td><td>---
-title: FAT03 Answer Key - OE22708 Fundamentals of Wireless Communication
-id: fat03-answers
-tags: 
-  - exam
-  - answers
-  - unit4
-  - unit5
-alias: 
-  - FAT3 Answers
-links: 
-  - 
+Once a receiver obtains multiple, independently faded signal branches through a diversity scheme (like space diversity), it must process them to create a single, more reliable output. This processing is done by combining or selection techniques, which vary in performance and complexity.
+
+**1. Selection Combining (SC)**
+*   **Mechanism:** The receiver circuitry continuously monitors the Signal-to-Noise Ratio (SNR) of all `M` diversity branches. It then selects the single branch with the highest instantaneous SNR and feeds only that signal to the demodulator. All other branches are ignored.
+*   **Inspection:** This is the simplest combiner to implement. It only requires one full receiver chain, as it just switches the input to the demodulator. However, its performance is limited because it discards the signal energy present in the other `M-1` branches.
+
+**2. Switched Diversity**
+*   **Mechanism:** This is a simpler, lower-cost version of SC. The receiver stays with one antenna until its signal quality drops below a predefined threshold. Only then does it switch to another antenna and checks its quality. It continues switching until it finds an acceptable signal.
+*   **Inspection:** This is the cheapest method but offers the worst performance, as it is not guaranteed to be on the *best* branch, only the first *acceptable* one it finds. It is suitable for very low-cost applications.
+
+**3. Equal Gain Combining (EGC)**
+*   **Mechanism:** The signals from all `M` branches are first co-phased (their phases are aligned). Then, they are all summed together with equal weighting (i.e., they are simply added up).
+*   **Inspection:** EGC is significantly more effective than SC because it uses the energy from all branches. Its performance is very close to the optimal method (MRC). Its complexity is higher than SC because it requires circuitry to estimate and correct the phase of each signal, but it is simpler than MRC because it doesn't need to estimate signal amplitudes.
+
+**4. Maximal Ratio Combining (MRC)**
+*   **Mechanism:** MRC is the optimal linear combining technique. Like EGC, it co-phases the signals from all `M` branches. However, before summing them, it weights each signal proportionally to its individual SNR. Strong, clean signals are given high weight, and weak, noisy signals are given low weight.
+*   **Inspection:** This method yields the highest possible output SNR because it intelligently combines the signals to maximize the contribution of strong branches while minimizing the noise from weak ones. It is the most complex method, as it requires a dedicated receiver chain for each antenna to estimate both the **phase** and the **amplitude (for SNR weighting)** of each signal.
+
+**Comparison Summary**
+
+| Technique         | Complexity | Performance (Output SNR) | Key Requirement                                   |
+| :---------------- | :--------- | :----------------------- | :------------------------------------------------ |
+| Switched Diversity| Very Low   | Fair                     | Signal quality threshold detection.               |
+| Selection Combining| Low        | Good                     | SNR estimation on all branches.                   |
+| Equal Gain Combining| Medium     | Very Good                | Phase estimation on all branches.                 |
+| **MRC**           | **High**   | **Best (Optimal)**       | **Phase and Amplitude/SNR estimation on all branches.** |
+
+**Conclusion:**
+The choice of combining technique represents a classic engineering trade-off. MRC provides the best possible performance for improving link reliability, but its high complexity means that simpler methods like EGC or even SC are often used in practice where cost and power consumption are major constraints.
