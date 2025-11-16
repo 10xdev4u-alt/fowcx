@@ -64,3 +64,21 @@ This file will contain all the important formulas we cover throughout the course
     -   Formula: $$ PG = \frac{W}{R} = \frac{\text{Chip Rate}}{\text{Data Rate}} $$
     -   *W* is the bandwidth of the spread signal, *R* is the data rate of the original signal.
 
+---
+
+## UNIT IV: Mobile Radio Propagation
+
+### Path Loss Models
+
+1.  **Free Space Path Loss (FSPL) in dB:**
+    -   For distance `d` in km and frequency `f` in MHz:
+    -   Formula: $$ FSPL_{dB} = 32.44 + 20 \log_{10}(d_{km}) + 20 \log_{10}(f_{MHz}) $$
+
+2.  **Received Power in Free Space (in dBm):**
+    -   Formula: $$ P_{r,dBm} = P_{t,dBm} + G_{t,dBi} + G_{r,dBi} - FSPL_{dB} $$
+    -   *P_t* is transmitted power, *G_t* and *G_r* are transmit and receive antenna gains.
+
+3.  **Log-Distance Path Loss Model:**
+    -   Formula: $$ PL(d) = PL(d_0) + 10n \log_{10}\left(\frac{d}{d_0}\right) $$
+    -   *PL(d)* is path loss at distance `d`, *PL(d_0)* is path loss at reference distance `d_0`, *n* is the path loss exponent.
+

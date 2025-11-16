@@ -2,7 +2,7 @@
 title: "Problems and Solutions"
 id: "00-problems"
 tags: ["#problems", "#fowc"]
-aliases: ["Problem Bank"]
+alias: ["Problem Bank"]
 links: []
 ---
 
@@ -90,3 +90,27 @@ This file will contain all the practice problems and their solutions we cover th
 >
 > **Solution:**
 > The frame efficiency is **72.96%**. This means that approximately 27% of the transmitted information is overhead.
+
+---
+
+## UNIT IV: Mobile Radio Propagation
+
+### Free Space Propagation Model
+
+**Problem 1:** Calculate the Free Space Path Loss (FSPL) for a signal transmitted at 2 GHz over a distance of 10 km.
+
+> **Approach:**
+> 1.  **Identify Given Values:**
+>     -   Frequency (f) = 2 GHz = 2000 MHz
+>     -   Distance (d) = 10 km
+> 2.  **Choose Formula:** Use the practical FSPL formula for d in km and f in MHz.
+>     $$ FSPL_{dB} = 32.44 + 20 \log_{10}(d_{km}) + 20 \log_{10}(f_{MHz}) $$
+>
+> **Calculation:**
+> -   $FSPL_{dB} = 32.44 + 20 \log_{10}(10) + 20 \log_{10}(2000)$
+> -   $FSPL_{dB} = 32.44 + (20 \times 1) + (20 \times 3.301)$
+> -   $FSPL_{dB} = 32.44 + 20 + 66.02$
+> -   $FSPL_{dB} = 118.46 \text{ dB}$
+>
+> **Solution:**
+> The Free Space Path Loss for this scenario is approximately **118.46 dB**.
