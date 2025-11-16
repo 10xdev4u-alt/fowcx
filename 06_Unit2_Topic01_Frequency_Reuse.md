@@ -135,6 +135,4 @@ $$
 >
 > **Key Takeaway:** Frequency reuse is the foundational concept that enables high capacity in cellular networks. It is a careful balancing act between maximizing the number of users and minimizing co-channel interference.
 
-This covers the fundamentals of Frequency Reuse. It's a super important topic, so let me know if anything is unclear or if you have any questions.
 
-Waiting for your confirmation to proceed to the next topic. Type 'next' or ask questions.
