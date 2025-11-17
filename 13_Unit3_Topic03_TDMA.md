@@ -1,4 +1,4 @@
---- 
+---
 title: "Time Division Multiple Access (TDMA)"
 id: "unit3-topic3-tdma"
 tags: ["#multiple_access", "#unit3", "#tdma"]
