@@ -18,18 +18,18 @@ A detailed comparison of different wireless communication systems, including gen
 
 ### 1.1. Comparison Table
 
-| Feature             | Cordless Telephone | Paging System      | 1G Cellular        | 2G Cellular        | 3G Cellular        | 4G Cellular        | 5G Cellular        |
-| :------------------ | :----------------- | :----------------- | :----------------- | :----------------- | :----------------- | :----------------- | :----------------- |
-| **Primary Service** | Voice              | One-way Messaging  | Analog Voice       | Digital Voice, SMS | Mobile Internet    | Mobile Broadband   | Enhanced Mobile Broadband, IoT, URLLC |
-| **Communication**   | Two-way (local)    | One-way            | Two-way            | Two-way            | Two-way            | Two-way            | Two-way            |
-| **Technology**      | Analog/Digital (e.g., DECT) | Analog/Digital (e.g., POCSAG) | Analog (e.g., AMPS) | Digital (e.g., GSM, CDMA) | Digital (e.g., UMTS, CDMA2000) | All-IP (e.g., LTE) | 5G NR, mmWave, Massive MIMO |
-| **Mobility**        | Limited (local)    | High (receive-only) | High (regional)    | High (national/international) | High               | High               | High               |
-| **Data Rate**       | N/A                | Very Low           | N/A                | Up to ~64 kbps     | Up to ~2 Mbps      | Up to ~100 Mbps    | Up to ~10 Gbps     |
-| **Security**        | Low                | Low                | Very Low           | Moderate (encryption) | Moderate to High   | High               | Very High          |
-| **Capacity**        | Low                | High (broadcast)   | Low                | Moderate           | High               | Very High          | Extremely High     |
-| **Handoff**         | Not supported      | Not applicable     | Supported          | Supported          | Supported          | Supported          | Supported          |
-| **Network Type**    | Private/Local      | Public (broadcast) | Public (cellular)  | Public (cellular)  | Public (cellular)  | Public (cellular)  | Public (cellular)  |
-| **Cost (User)**     | Low                | Low                | Moderate           | Moderate           | Moderate to High   | High               | High               |
+| Feature             | Cordless Telephone          | Paging System                 | 1G Cellular         | 2G Cellular                   | 3G Cellular                    | 4G Cellular        | 5G Cellular                           |
+| :------------------ | :-------------------------- | :---------------------------- | :------------------ | :---------------------------- | :----------------------------- | :----------------- | :------------------------------------ |
+| **Primary Service** | Voice                       | One-way Messaging             | Analog Voice        | Digital Voice, SMS            | Mobile Internet                | Mobile Broadband   | Enhanced Mobile Broadband, IoT, URLLC |
+| **Communication**   | Two-way (local)             | One-way                       | Two-way             | Two-way                       | Two-way                        | Two-way            | Two-way                               |
+| **Technology**      | Analog/Digital (e.g., DECT) | Analog/Digital (e.g., POCSAG) | Analog (e.g., AMPS) | Digital (e.g., GSM, CDMA)     | Digital (e.g., UMTS, CDMA2000) | All-IP (e.g., LTE) | 5G NR, mmWave, Massive MIMO           |
+| **Mobility**        | Limited (local)             | High (receive-only)           | High (regional)     | High (national/international) | High                           | High               | High                                  |
+| **Data Rate**       | N/A                         | Very Low                      | N/A                 | Up to ~64 kbps                | Up to ~2 Mbps                  | Up to ~100 Mbps    | Up to ~10 Gbps                        |
+| **Security**        | Low                         | Low                           | Very Low            | Moderate (encryption)         | Moderate to High               | High               | Very High                             |
+| **Capacity**        | Low                         | High (broadcast)              | Low                 | Moderate                      | High                           | Very High          | Extremely High                        |
+| **Handoff**         | Not supported               | Not applicable                | Supported           | Supported                     | Supported                      | Supported          | Supported                             |
+| **Network Type**    | Private/Local               | Public (broadcast)            | Public (cellular)   | Public (cellular)             | Public (cellular)              | Public (cellular)  | Public (cellular)                     |
+| **Cost (User)**     | Low                         | Low                           | Moderate            | Moderate                      | Moderate to High               | High               | High                                  |
 
 ---
 
